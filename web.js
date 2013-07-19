@@ -1,12 +1,11 @@
 var express = require('express');
-var fs = require('fs');
 
-var app = express.createServer(express.logger());
-var buffer = fs.readFileSync('index.html');
+var app = express();
 
-app.get('/', function(request, response) {
-  response.send(buffer.toString());
-});
+// compress static content
+app.use(express.compress());
+// static content from /public
+app.use(express.static(__dirname + '/public'));
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
