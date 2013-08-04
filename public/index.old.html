@@ -153,20 +153,19 @@
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
-          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="row-fluid statistics">
+            <div class="statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>640</h3> <p>backers</p>
+                <h3>1200</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$ 64,000</h3> <p>of $ 100,000</p>
+                  <h3>$40,000</h3> <p>of $100,000</p>
                 </div>
               </div>
               <div class="span4">
@@ -176,7 +175,6 @@
               </div>
             </div>
           </div>
-          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -185,23 +183,17 @@
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
-          </div>
-          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder ($ 100)</button>
           </div>
-          </div>
-          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
-          </div>
-        </div>
         </div>
       </div>
 
@@ -230,35 +222,20 @@
 
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
- 	  <h3>How it works</h3>
+	  <h3>How it works</h3>
           <p>
 		The service "Is Granny Safe?" (www.isgrannysafe.com) uses the sensors of a modern 
 		smartphone to keep track of the movements and location of its owner. The smartphone sends
 		periodically the sensor data to a central system. This system gradually learns what
-		the normal pattern of movements (and locations) for the smartphone owner is so that after a while the system
+		the normal pattern of movements for the smartphone owner is so that after a while the system
 		can generate an alert when an unusual pattern of movements (or no movement at all) is found. 
-		The alert is first sent to the smartphone to check if there was really something
-		unusual happening. If the smartphone owner is not responding, the alert will be forwarded
-		to someone who is able to assist. When needed, other
-		people can be signalled at the same time.
+		The alert is first sent to the
+		smartphone to check if there was really something strange going on. If the smartphone
+		owner is not responding, the alert will be forwarded to someone who is able to assist.
           </p>
-       </div>
+        </div>
         <div class="span5 asset">
-	  <h3>Why you (and Granny!) should care</h3>
-	  <p>
-	     Knowing that the people you love most are taken care of
-	     is very important.
-	     For Granny, to know that even when an accident
-	     happens or sudden illness strikes she is not alone,
-	     someone is coming for assistance is very reassuring.
-	     For you, to know that even if you live at a distance,
-	     Granny is being assisted whenever she needs help
-	     can possibly make life a little bit easier for you.
-	     <br/><br/>
-	     But remember... Granny still loves to hear your voice!
-	     Don't forget to call her often and don't forget her
-	     birthday!
-	  </p>
+          <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
       </div>
 
@@ -267,19 +244,19 @@
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
       <div class="row-fluid faq">
           <div class="span10 offset1">
-             <h3>Frequently Asked Questions</h3>
+            <h3>Frequently Asked Questions</h3>
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseRef">
-		Which survey are you referring to as [1]?	
+		What is the survey you are referring to as [1]?	
                   </a>
                 </div>
                 <div id="collapseRef" class="accordion-body collapse">
                   <div class="accordion-inner">
 		"Aging in Place in America" 
-		prepared by Prince Market Research:
+		prepared by Prince Market Research,
 		August 20, 2007
                   </div>
                 </div>
@@ -287,14 +264,13 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-		What about security?
+		How is the privacy of the members guaranteed?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-		Each member of "Is Granny Safe?" has an own account
-		and the smartphone is associated uniquely to the
-		account. All data on the servers is strongly encrypted.
+		Each member of "Is Granny Safe?" has an own unique userid and password. Members cannot
+		see each others data. Moreover, all data is stored encrypted on the servers.
                   </div>
                 </div>
               </div>
@@ -309,27 +285,7 @@
                   <div class="accordion-inner">
 		Yes, because only in that way sudden events like a fall or collapse can
 		be detected. Putting the smartphone down for a nap is OK as the system
-		is soon learning what your usual nap-times are so you
-		are still being monitored.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseThree">
-		How about the privacy of the person carrying the
-		smartphone?
-                  </a>
-                </div>
-                <div id="collapseThree" class="accordion-body collapse">
-                  <div class="accordion-inner">
-		Most people are quick in realizing that the benefits
-		of having nearly immediate assistance in an emergency
-		soon overcomes the slight reduction in privacy as a
-		result of monitoring all movements. As the sensor data
-		is analyzed directly when it arrives at the servers,
-		no privacy-sensitive data is ever recorded.
+		is soon learning what your usual nap-times are so you will not be disturbed.
                   </div>
                 </div>
               </div>
